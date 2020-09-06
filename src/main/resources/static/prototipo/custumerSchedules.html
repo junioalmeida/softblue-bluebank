@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="Author" content="Junio Almeida" /> 
+		<meta name="descripton" content="BlueBank, banco virtual e completo" />
+		<meta name="keywords" content="BlueBank, Banco" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link rel="stylesheet" type="text/css" href="css/utilityStyles.css" />
+
+		<title>BlueBank</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+			 	<a href="custumerHome.html">BlueBank</a>
+			 	<a href="custumerStatement.html">Extrato</a>
+			 	<a href="custumerTransfer.html">Transferências</a>
+			 	<a href="custumerProfile.html" class="active">Agendamentos</a>
+			 	<a href="custumerProfile.html">Meu Perfil</a>
+
+			 	<div class="hello-message">
+				 	<span>Boa noite, Junio!</span>
+				 </div>
+			</nav>
+		</header>
+		<!--End Header -->
+
+		<div class="div-content content-center">
+			<h1>Lançamentos Futuros</h1>
+
+			<form>
+				<fieldset>
+					<legend>Filtros</legend>
+					<input type="submit" name="all" value="Todas" class="btn btn-small" />
+					<input type="submit" name="checkingAccount" value="Conta Corrente" class="btn btn-small btn-small-selected" />
+					<input type="submit" name="savingAccount" value="Conta Poupança" class="btn btn-small" />
+				</fieldset>
+			</form>
+		
+			<br /><br />
+
+			<table class="text-center content-center">
+				<thead>
+					<tr>
+						<th>Data</th>
+						<th>Valor</th>
+						<th>Observação</th>
+						<th>Ações</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>24/08/2020</td>
+						<td class="debit">-R$ 253,00</td>
+						<td>Conta de Luz</td>
+						<td><button class="btn btn-small">Excluir</button></td>
+					</tr>
+					<tr>
+						<td>23/08/2020</td>
+						<td class="credit">R$ 25,00</td>
+						<td>Devolução Shopping</td>
+						<td><button class="btn btn-small">Excluir</button></td>
+					</tr>
+					<tr>
+						<td>24/09/2020</td>
+						<td class="debit">-R$ 478,00</td>
+						<td>Moto</td>
+						<td><button class="btn btn-small">Excluir</button></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="font-total">Total Previsto</td>
+						<td colspan="2" class="debit">R$ 254,04</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<!-- Start Footer -->
+		<footer class="text-center">
+		  	Junio Almeida © 2020 Copyright 
+		</footer>
+	</body>
+</html>

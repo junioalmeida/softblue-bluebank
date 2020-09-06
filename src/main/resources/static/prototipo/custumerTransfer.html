@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="Author" content="Junio Almeida" /> 
+		<meta name="descripton" content="BlueBank, banco virtual e completo" />
+		<meta name="keywords" content="BlueBank, Banco" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link rel="stylesheet" type="text/css" href="css/utilityStyles.css" />
+
+		<title>BlueBank</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+			 	<a href="custumerHome.html">BlueBank</a>
+			 	<a href="custumerStatement.html">Extrato</a>
+			 	<a href="custumerTransfer.html" class="active">Transferências</a>
+			 	<a href="custumerSchedules.html">Agendamentos</a>
+			 	<a href="custumerProfile.html">Meu Perfil</a>
+			 	
+
+			 	<div class="hello-message">
+				 	<span>Boa noite, Junio!</span>
+				 </div>
+			</nav>
+		</header>
+		<!--End Header -->
+
+		<div class="div-content content-center">
+			<h1>Transferência</h1>
+
+			<br />
+
+			<form method="POST" class="content-center">
+				<fieldset>
+					<label for="value">Valor: </label>
+					<input type="number" min="0" id="value" name="value" />
+
+					<br /><br />
+
+					<aside class="div-choose-transfer-data content-center">
+						<a href="#" class="choose-new active">Novo</a>
+						<a href="#" class="choose-favorite">Favoritos</a>
+					</aside>
+
+					<br /><br />
+
+					<div id="div-transfer-data">
+						<label for="CPF/CNPJ">CPF/ CNPJ:</label>
+						<input type="text" id="CPF/CNPJ" name="CPF/CNPJ" />
+
+						<br /><br />
+
+						<label for="name">Nome:</label>
+						<input type="text" id="name" name="name" />
+
+						<br /><br />
+
+						<label for="account">Conta:</label>
+						<input type="text" id="account" name="account" />
+
+						<br /><br />
+					</div>
+
+					<input class="content-center mt-2 d-block btn btn-primary" type="submit" value="Transferir" />
+				</fieldset>
+			</form>
+		</div>
+		
+		<!-- Start Footer -->
+		<footer class="text-center">
+		  	Junio Almeida © 2020 Copyright 
+		</footer>
+	</body>
+</html>

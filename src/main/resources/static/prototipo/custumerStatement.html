@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="Author" content="Junio Almeida" /> 
+		<meta name="descripton" content="BlueBank, banco virtual e completo" />
+		<meta name="keywords" content="BlueBank, Banco" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link rel="stylesheet" type="text/css" href="css/utilityStyles.css" />
+
+		<title>BlueBank</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+			 	<a href="custumerHome.html">BlueBank</a>
+			 	<a href="custumerStatement.html" class="active">Extrato</a>
+			 	<a href="custumerTransfer.html">Transferências</a>
+			 	<a href="custumerSchedules.html">Agendamentos</a>
+			 	<a href="custumerProfile.html">Meu Perfil</a>
+			 	
+			 	<div class="hello-message">
+				 	<span>Boa noite, Junio!</span>
+				 </div>
+			</nav>
+		</header>
+		<!--End Header -->
+
+		<div class="div-content content-center">
+			<h1>Extrato</h1>
+
+			<br />
+
+			<form method="GET">
+				<input type="radio" name="accountType" id="C" value="C" checked />
+				<label for="C">Conta Corrente</label>
+
+				&nbsp;&nbsp;&nbsp;
+
+				<input type="radio" name="accountType" id="P" value="P" />
+				<label for="P">Conta Poupança</label>
+
+				<br /><br />
+
+				<label for="dateStart">Início:</label>
+				<input type="date" id="dateStart" name="dateStart" />
+
+				<label for="dateEnd">Fim:</label>
+				<input type="date" id="dateEnd" name="dateEnd" />
+
+				<br /><br />
+				<input type="text" name="search" placeholder="Pesquisa..." />	
+				<input type="submit" value="Pesquisar" class="btn btn-primary" />
+			</form>
+
+			<br />
+
+			<table class="content-center">
+				<thead>
+					<tr>
+						<th>Data</th>
+						<th>Valor Movimentado</th>
+						<th>Saldo</th>
+						<th>Descrição</th>
+						<th>Ações</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>25/05/2020</td>
+						<td>-R$ 253,14</td>
+						<td>R$ 2457,21</td>
+						<td>Boleto Moto</td>
+						<td><button class="btn btn-small">Visualizar</button></td>
+					</tr>
+
+					<tr>
+						<td>25/05/2020</td>
+						<td class="debit">-R$ 253,14</td>
+						<td>R$ 2457,21</td>
+						<td>Boleto Moto</td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td>25/05/2020</td>
+						<td class="credit">R$ 253,14</td>
+						<td>R$ 2457,21</td>
+						<td>Boleto Moto</td>
+						<td><button class="btn btn-small">Visualizar</button></td>
+					</tr>
+
+					<tr>
+						<td>25/05/2020</td>
+						<td>-R$ 253,14</td>
+						<td>R$ 2457,21</td>
+						<td>Boleto Moto</td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td>25/05/2020</td>
+						<td>-R$ 253,14</td>
+						<td>R$ 2457,21</td>
+						<td>Boleto Moto</td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td>25/05/2020</td>
+						<td>-R$ 253,14</td>
+						<td>R$ 2457,21</td>
+						<td>Boleto Moto</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<!-- Start Footer -->
+		<footer class="text-center">
+		  	Junio Almeida © 2020 Copyright 
+		</footer>
+	</body>
+</html>
